@@ -3,9 +3,14 @@ $font-size-root: 62.5%;
 $font-size-base: 1.4rem; //14px
 $line-height-base: 1.4;
 
-$color-black: #222;
-$color-white: #ededed;
-$color-red: #c92b2b;
+$color-black: #333;
+$color-white: rgb(251, 251, 251);
+$color-red: #ec6d5f;
+$color-red2: #c92b2b;
+$color-blue: #1fa0e3;
+$color-green: #47bfa4;
+$font-grey: #464a4c;
+
 
 html{
 	//	font-family: $font-family-base;
@@ -17,12 +22,54 @@ body{
 	height: 2000px;
 }
 
+section{padding-top: 70px;padding-bottom: 70px;}
+
+h1,h2,h3{
+	text-align: center;
+	margin-bottom: 50px;
+	//	color: $color-black;
+}
+h4{
+	font-size: 1.2em;
+}
+h2{
+	font-weight: 700;
+}
+
+.bg-light{
+	color: $font-grey;
+	background-color: $color-white;
+	h1,h2,h3,h4{
+		color: $color-black;
+	}
+}
+
+.bg-dark{
+	color: $color-white;
+	background-color: #283139;
+}
+
+.red{color:$color-red}
+.blue{color:$color-blue}
+.green{color:$color-green}
+
 .ml-md{margin-left: 30px;}
 .mb-md{margin-bottom: 30px;}
 .mr-md{margin-right: 30px;}
 .mt-md{margin-top: 30px;}
+
+.pl-md{padding-left: 30px;}
+.pb-md{padding-bottom: 30px;}
+.pr-md{padding-right: 30px;}
+.pt-md{padding-top: 30px;}
+
 .vam{vertical-align: middle;}
 .tac{text-align: center;}
+
+.subtitle{
+	font-weight: bold;	
+	font-size: 1em;
+}
 
 .lead{
 	a{
@@ -99,9 +146,33 @@ body{
 
 //---------------Section profil--------------------
 
+#profil{
+	padding-top: 70px;
+	ul{
+		list-style: none;
+		padding-left: 0;
+		margin-top: -13px;
+		li{
+			padding-top: 5px;
+		}
+	}
+}
 
 
+//---------------section parcours-------------------
 
+#parcours{
+	ul{
+		list-style: none;
+		padding-left: 0;
+		li{
+			padding-top: 5px;
+		}
+	}
+	.flaticon-round:before{
+		font-size: 1.8em;
+	}
+}
 
 
 

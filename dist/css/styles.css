@@ -1,0 +1,228 @@
+/* line 18, E:/CV/scss/styles.scss */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 2000px;
+}
+
+/* line 25, E:/CV/scss/styles.scss */
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* line 27, E:/CV/scss/styles.scss */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 32, E:/CV/scss/styles.scss */
+h4 {
+  font-size: 1.2em;
+}
+
+/* line 35, E:/CV/scss/styles.scss */
+h2 {
+  font-weight: 700;
+}
+
+/* line 39, E:/CV/scss/styles.scss */
+.bg-light {
+  color: #464a4c;
+  background-color: #fbfbfb;
+}
+
+/* line 42, E:/CV/scss/styles.scss */
+.bg-light h1, .bg-light h2, .bg-light h3, .bg-light h4 {
+  color: #333;
+}
+
+/* line 47, E:/CV/scss/styles.scss */
+.bg-dark {
+  color: #fbfbfb;
+  background-color: #283139;
+}
+
+/* line 52, E:/CV/scss/styles.scss */
+.red {
+  color: #ec6d5f;
+}
+
+/* line 53, E:/CV/scss/styles.scss */
+.blue {
+  color: #1fa0e3;
+}
+
+/* line 54, E:/CV/scss/styles.scss */
+.green {
+  color: #47bfa4;
+}
+
+/* line 56, E:/CV/scss/styles.scss */
+.ml-md {
+  margin-left: 30px;
+}
+
+/* line 57, E:/CV/scss/styles.scss */
+.mb-md {
+  margin-bottom: 30px;
+}
+
+/* line 58, E:/CV/scss/styles.scss */
+.mr-md {
+  margin-right: 30px;
+}
+
+/* line 59, E:/CV/scss/styles.scss */
+.mt-md {
+  margin-top: 30px;
+}
+
+/* line 61, E:/CV/scss/styles.scss */
+.pl-md {
+  padding-left: 30px;
+}
+
+/* line 62, E:/CV/scss/styles.scss */
+.pb-md {
+  padding-bottom: 30px;
+}
+
+/* line 63, E:/CV/scss/styles.scss */
+.pr-md {
+  padding-right: 30px;
+}
+
+/* line 64, E:/CV/scss/styles.scss */
+.pt-md {
+  padding-top: 30px;
+}
+
+/* line 66, E:/CV/scss/styles.scss */
+.vam {
+  vertical-align: middle;
+}
+
+/* line 67, E:/CV/scss/styles.scss */
+.tac {
+  text-align: center;
+}
+
+/* line 69, E:/CV/scss/styles.scss */
+.subtitle {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* line 75, E:/CV/scss/styles.scss */
+.lead a {
+  width: 160px;
+}
+
+/* line 82, E:/CV/scss/styles.scss */
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  transform-origin: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+/* line 99, E:/CV/scss/styles.scss */
+.scroll:hover {
+  opacity: .5;
+  text-decoration: none;
+}
+
+/* line 103, E:/CV/scss/styles.scss */
+.scroll span {
+  position: absolute;
+  top: -73px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+/* line 149, E:/CV/scss/styles.scss */
+#profil {
+  padding-top: 70px;
+}
+
+/* line 151, E:/CV/scss/styles.scss */
+#profil ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: -13px;
+}
+
+/* line 155, E:/CV/scss/styles.scss */
+#profil ul li {
+  padding-top: 5px;
+}
+
+/* line 165, E:/CV/scss/styles.scss */
+#parcours ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 168, E:/CV/scss/styles.scss */
+#parcours ul li {
+  padding-top: 5px;
+}
+
+/* line 172, E:/CV/scss/styles.scss */
+#parcours .flaticon-round:before {
+  font-size: 1.8em;
+}
+
+/*# sourceMappingURL=../dist/css/styles.map */
