@@ -11,6 +11,10 @@ $color-blue: #1fa0e3;
 $color-green: #47bfa4;
 $font-grey: #464a4c;
 
+$bg-red: rgb(219, 41, 41);
+$bg-orange: rgb(247, 142, 22);
+$bg-yellow: rgb(252, 231, 0);
+$bg-green: rgb(131, 201, 18);
 
 html{
 	//	font-family: $font-family-base;
@@ -180,10 +184,26 @@ h2{
 	ul{
 		list-style: none;
 		font-size: 1.2em;
+		& div{
+			border-radius: 5px;
+			background-color: #ddd;
+			width: 100%;
+			height: 7px;
+		}
+	}
+	h3{
+		text-align:left;
+		font-size: 1.5em;
+		font-weight: normal;
+		margin-bottom: 30px;
+		padding-left: 40px;
 	}
 }
 
-
+.bar-red div div{ background-color: $bg-red !important;}
+.bar-orange div div{ background-color: $bg-orange !important;}
+.bar-yellow div div{ background-color: $bg-yellow !important;}
+.bar-green div div{ background-color: $bg-green !important;}
 
 
 
