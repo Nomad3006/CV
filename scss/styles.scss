@@ -7,14 +7,16 @@ $color-black: #333;
 $color-white: rgb(251, 251, 251);
 $color-red: #ec6d5f;
 $color-red2: #c92b2b;
-$color-blue: #1fa0e3;
+$color-blue: #2a97dc;
 $color-green: #47bfa4;
 $font-grey: #464a4c;
 
 $bg-red: rgb(219, 41, 41);
+$bg-red2: #ff4242;
 $bg-orange: rgb(247, 142, 22);
 $bg-yellow: rgb(252, 231, 0);
 $bg-green: rgb(131, 201, 18);
+$bg-blue: $color-blue;
 
 html{
 	//	font-family: $font-family-base;
@@ -23,7 +25,6 @@ body{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	height: 2000px;
 }
 
 section{padding-top: 70px;padding-bottom: 70px;}
@@ -206,7 +207,19 @@ h2{
 .bar-green div div{ background-color: $bg-green !important;}
 
 
+//---------------section competence-------------------
+#folio-ave{background-color: $bg-blue;color: $color-white;}
+#folio-leon{background-color: $bg-red;color: $color-white;}
 
+#portfolio{
+	img{width: 100%;}
+	& > div{
+		height: 500px;
+	}
+	aside i:before{
+		font-size: 12em;
+	}
+}
 
 
 
