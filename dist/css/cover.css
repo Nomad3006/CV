@@ -1,1 +1,173 @@
-a,a:focus,a:hover{color:#fff;text-decoration:none}.btn-secondary{color:#fff;text-shadow:none;background-color:#333;border:.05rem solid #fff;transition:all .4s ease}.btn-secondary:hover,.btn-secondary:focus{color:#333;background-color:#fff}.site-wrapper{color:#fff;text-align:center;text-shadow:0 0.05rem 0.1rem rgba(0,0,0,0.5);background-color:#333;display:table;width:100%;height:100vh;min-height:100vh;-webkit-box-shadow:inset 0 0 5rem rgba(0,0,0,0.5);box-shadow:inset 0 0 5rem rgba(0,0,0,0.5)}.site-wrapper-inner{display:table-cell;vertical-align:top}.cover-container{margin-right:auto;margin-left:auto}.inner{padding:2rem}.masthead{margin-bottom:2rem}.masthead-brand{margin-bottom:0;color:#fff}.nav-masthead .nav-link{padding:.25rem 0;font-weight:bold;color:rgba(255,255,255,0.5);background-color:transparent;border-bottom:.25rem solid transparent}.nav-masthead .nav-link:hover,.nav-masthead .nav-link:focus{border-bottom-color:rgba(255,255,255,0.25)}.nav-masthead .nav-link+.nav-link{margin-left:1rem}.nav-masthead .active{color:#fff;border-bottom-color:#fff}@media (min-width: 48em){.masthead-brand{float:left}.nav-masthead{float:right}}.cover{padding:0 1.5rem}.cover .btn-lg{padding:.75rem 1.25rem;font-weight:bold}.cover-heading{color:#fff}@media (min-width: 40em){.masthead{position:fixed;top:0}.mastfoot{position:fixed;bottom:0}.site-wrapper-inner{vertical-align:middle}.masthead,.mastfoot,.cover-container{width:100%}}@media (min-width: 62em){.masthead,.mastfoot,.cover-container{width:63rem}}
+/* line 1, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 8, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.btn-secondary {
+  color: #fff;
+  text-shadow: none;
+  background-color: #333;
+  border: .05rem solid #fff;
+  transition: all .4s ease;
+}
+
+/* line 15, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.btn-secondary:hover, .btn-secondary:focus {
+  color: #333;
+  background-color: #fff;
+}
+
+/* line 25, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.site-wrapper {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  background-color: #333;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  /* For at least Firefox */
+  min-height: 100vh;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+/* line 39, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* line 44, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 49, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.inner {
+  padding: 2rem;
+}
+
+/* line 53, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.masthead {
+  margin-bottom: 2rem;
+  width: 100% !important;
+}
+
+/* line 57, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.nav-scaled {
+  background-color: #333;
+}
+
+/* line 59, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.nav-scaled inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 65, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.masthead-brand {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+/* line 70, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+/* line 78, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+/* line 83, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+/* line 87, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  /* line 93, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  .masthead-brand {
+    float: left;
+  }
+  /* line 96, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  .nav-masthead {
+    float: right;
+  }
+}
+
+/* line 101, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.cover {
+  padding: 0 1.5rem;
+}
+
+/* line 105, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+/* line 110, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+.cover-heading {
+  color: #fff;
+}
+
+@media (min-width: 40em) {
+  /* line 115, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  /* line 138, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  /* line 120, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  /* line 143, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  /* line 126, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  /* line 147, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  /* line 131, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+    /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  /* line 155, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  /* line 141, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 63rem;
+  }
+}
+
+/*# sourceMappingURL=../dist/css/cover.map */
+
+/*# sourceMappingURL=../dist/css/cover.map */
