@@ -11,7 +11,7 @@ Copyright (c) 2017, Apache
 </metadata>
 <defs>
 <font id="Flaticon" horiz-adv-x="512" >
-  <font-face 
+  <font-face
     font-family="Flaticon"
     font-weight="400"
     font-stretch="normal"
@@ -25,7 +25,7 @@ Copyright (c) 2017, Apache
     unicode-range="U+0020-F10B"
   />
     <missing-glyph />
-    <glyph glyph-name="space" unicode=" " horiz-adv-x="200" 
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="200"
  />
     <glyph glyph-name="uniF103" unicode="&#xf103;"
 d="M391.429 166.653l-220.152 -220.145c-14.0039 -14.0117 -36.71 -14.0117 -50.707 0c-13.999 13.998 -13.999 36.7031 0 50.7002l194.8 194.795l-194.794 194.788c-13.999 14.0039 -13.999 36.7061 0 50.7051c13.998 14.0039 36.7031 14.0039 50.707 0l220.152 -220.148
