@@ -25,6 +25,17 @@ function emailBlurFunction (elem){
 	}
 }
 
+function emptyBlurFunction (elem){
+	if(elem.value.length){
+		validate(elem);
+		return true;
+	}
+	else{
+		declined(elem);
+		return false;
+	}
+}
+
 function checkAll(){
 	var name = document.getElementById('name-input');
 	var email = document.getElementById('email-input');
@@ -48,19 +59,25 @@ function checkAll(){
 }
 
 function validate(e){
-	e.classList.add("ok");
-	e.classList.remove("ko");
-	e.nextElementSibling.classList.add("flaticon-success");
-	e.nextElementSibling.classList.remove("flaticon-error");
-	e.classList.add("has-success");
-	e.classList.remove("has-danger");
+	console.info($(e).parent());
+//	e.classList.add("ok");
+//	e.classList.remove("ko");
+//	e.nextElementSibling.classList.add("flaticon-success");
+//	e.nextElementSibling.classList.remove("flaticon-error");
+	$(e).addClass("form-control-success");
+	$(e).parent().addClass("has-success");
+	$(e).removeClass("form-control-danger");
+	$(e).parent().removeClass("has-danger");
 }
 
 function declined(e){
-	e.classList.add("ko");
-	e.classList.remove("ok");
-	e.nextElementSibling.classList.add("flaticon-error");
-	e.nextElementSibling.classList.remove("flaticon-success");
-	e.parent().addClass("has-danger");
-	e.parent().removeClass("has-success");
+	console.info($(e).parent());
+//	e.classList.add("ko");
+//	e.classList.remove("ok");
+//	e.nextElementSibling.classList.add("flaticon-error");
+//	e.nextElementSibling.classList.remove("flaticon-success");
+	$(e).addClass("form-control-danger");
+	$(e).parent().addClass("has-danger");
+	$(e).parent().removeClass("has-success");
+	$(e).removeClass("form-control-success");
 }

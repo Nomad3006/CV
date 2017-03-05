@@ -65,7 +65,7 @@ h2 {
 }
 
 /* line 62, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
-.mb-md {
+.mb-md, form .form-group {
   margin-bottom: 30px;
 }
 
@@ -335,30 +335,43 @@ form .ok {
 }
 
 /* line 250, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
-form i {
-  position: absolute;
-  right: -32px;
-  top: -10px;
+form .form-control {
+  display: inline-block !important;
+  width: 80%;
 }
 
 /* line 254, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+form i {
+  vertical-align: top;
+  display: inline-block;
+  right: -32px;
+  top: -10px;
+  line-height: 1;
+}
+
+/* line 260, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
 form i:before {
   font-size: 38px !important;
 }
 
-/* line 258, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+/* line 264, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+form input {
+  vertical-align: top;
+}
+
+/* line 267, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
 form .flaticon-error:before {
   color: rgba(230, 37, 37, 0.46);
 }
 
-/* line 261, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+/* line 270, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
 form .flaticon-success:before {
   color: #3adb13;
 }
 
-/* line 264, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
-form .col-7 {
-  position: relative;
+/* line 276, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+form .col-form-label {
+  color: #333 !important;
 }
 
 /*# sourceMappingURL=../dist/css/styles.map */
