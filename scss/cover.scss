@@ -1,20 +1,25 @@
+$color-cover-primary: #333;
+$color-cover-secondary: #fff;
+$spacing: 2rem;
+$spacing-large: $spacing * 3;
+
 a,
 a:focus,
 a:hover {
-	color: #fff;
+	color: $color-cover-secondary;
 	text-decoration: none;
 }
 
 .btn-secondary{
-	color: #fff;
+	color: $color-cover-secondary;
 	text-shadow: none;
-	background-color: #333;
-	border: .05rem solid #fff;
+	background-color: $color-cover-primary;
+	border: .05rem solid $color-cover-secondary;
 	transition:all .4s ease;
-	
+
 	&:hover, &:focus{
-		color:#333;
-		background-color: #fff;
+		color:$color-cover-primary;
+		background-color: $color-cover-secondary;
 	}
 }
 
@@ -23,10 +28,10 @@ body {
 }
 
 .site-wrapper {
-	color: #fff;
+	color: $color-cover-secondary;
 	text-align: center;
 	text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-	background-color: #333;
+	background-color: $color-cover-primary;
 	display: table;
 	width: 100%;
 	height: 100vh;
@@ -55,7 +60,7 @@ body {
 	width: 100% !important;
 }
 .nav-scaled{
-	background-color: #333;
+	background-color: $color-cover-primary;
 	inner{
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -64,7 +69,7 @@ body {
 
 .masthead-brand {
 	margin-bottom: 0;
-	color: #fff;
+	color: $color-cover-secondary;
 }
 
 .nav-masthead .nav-link {
@@ -85,10 +90,39 @@ body {
 }
 
 .nav-masthead .active {
-	color: #fff;
-	border-bottom-color: #fff;
+	color: $color-cover-secondary;
+	border-bottom-color: $color-cover-secondary;
 }
 
+
+.actor {
+	margin: 0 auto;
+	font-size: 1.5rem;
+	display: flex;
+	div{
+		display: inline-block;
+		width: 289px;
+	}
+}
+
+.actor__prefix{
+	text-align: right;
+}
+
+.actor__content {
+	text-align: left;
+	flex-grow: 1;
+}
+
+@keyframes blink {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.actor__content--typing::after {
+	content: '|';
+	animation: blink 500ms infinite;
+}
 @media (min-width: 48em) {
 	.masthead-brand {
 		float: left;
@@ -108,7 +142,7 @@ body {
 }
 
 .cover-heading{
-	color: #fff;
+	color: $color-cover-secondary;
 }
 
 @media (min-width: 40em) {
