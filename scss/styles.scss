@@ -212,6 +212,7 @@ h2{
 #folio-leon{background-color: $bg-red2;color: $color-white;}
 
 #portfolio{
+	padding-bottom: 0;
 	h2{
 		width: 300px;
 		height: 66px;
@@ -242,11 +243,6 @@ h2{
 
 //---------------Contact Form-------------------
 form{
-	@extend section;
-	padding-left: 60px;
-	padding-top: 60px;
-	.ko{border-color: rgba(230, 37, 37, 0.46);}
-	.ok{border-color: rgb(58, 219, 19);}
 	.form-control{
 		display: inline-block !important;
 		width: 80%;
@@ -264,17 +260,11 @@ form{
 	input{
 		vertical-align: top;
 	}
-	.flaticon-error:before {
-		color: rgba(230, 37, 37, 0.46);
-	}
-	.flaticon-success:before{
-		color: rgb(58, 219, 19);
-	}
 	.form-group{
 		@extend .mb-md
 	}
 	.col-form-label{
-		color: $color-black !important;
+		color: $color-white !important;
 	}
 }
 

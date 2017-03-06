@@ -2,7 +2,7 @@ regmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-
 regtxt = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u
 regnum=/^[0-9]+$/i
 
-function textBlurFunction(elem) {
+function textCheck(elem) {
 	if(regtxt.test(elem.value) && elem.value.length){
 		validate(elem);
 		return true;
@@ -14,7 +14,7 @@ function textBlurFunction(elem) {
 
 }
 
-function emailBlurFunction (elem){
+function emailCheck (elem){
 	if(regmail.test(elem.value)){
 		validate(elem);
 		return true;
@@ -25,7 +25,7 @@ function emailBlurFunction (elem){
 	}
 }
 
-function emptyBlurFunction (elem){
+function isNotEmpty (elem){
 	if(elem.value.length){
 		validate(elem);
 		return true;
@@ -39,15 +39,13 @@ function emptyBlurFunction (elem){
 function checkAll(){
 	var name = document.getElementById('name-input');
 	var email = document.getElementById('email-input');
+	var msg = document.getElementById('msg-input');
 	var button = document.getElementById('subButton')
 	var bool = true;
 
-	bool &= textBlurFunction(name);
-	bool &= textBlurFunction(surname);
-	bool &= textBlurFunction(city);
-	bool &= cpBlurFunction(cp);
-	bool &= telBlurFunction(tel);
-	bool &= emailBlurFunction(email);
+	bool &= textCheck(name);
+	bool &= emailCheck(email);
+	bool &= isNotEmpty(msg)
 
 	if(bool){
 		return true;
