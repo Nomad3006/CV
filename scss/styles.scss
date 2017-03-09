@@ -223,6 +223,8 @@ h2{
 	& > div{
 		position: relative;
 		padding: 50px 0;
+		transition: all .3s ease;
+
 	}
 	article{display: flex; align-items: center;}
 	aside i:before{
@@ -234,6 +236,13 @@ h2{
 		left: 0;
 		width: 100%;
 		height: 100%;
+		z-index: 20;
+		&:hover + div{
+			transform: scale(0.98);
+		}
+		& + div{
+			transition: all .3s ease;
+		}
 	}
 }
 //
@@ -245,7 +254,6 @@ h2{
 form{
 	.form-control{
 		display: inline-block !important;
-		width: 80%;
 	}
 	i{
 		vertical-align: top;
@@ -265,6 +273,9 @@ form{
 	}
 	.col-form-label{
 		color: $color-white !important;
+	}
+	textarea{
+		height: 90px;
 	}
 }
 

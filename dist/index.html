@@ -4,18 +4,19 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title></title>
+<!--
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/bootstrap-reboot.css">
 		<link rel="stylesheet" href="css/flaticon.css">
 		<link rel="stylesheet" href="css/cover.css">
 		<link rel="stylesheet" href="css/styles.css">
+-->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700" rel="stylesheet">
 	</head>
 
 	<body>
-
-		<div class="site-wrapper scene">
+		<div class="site-wrapper scene light-themed">
 			<div class="site-wrapper-inner">
 				<div class="masthead clearfix">
 					<div class="inner container">
@@ -226,6 +227,7 @@
 		<section id="portfolio">
 			<h2 class="bg-dark">Portfolio</h2>
 			<div id="folio-ave">
+				<a href="#"></a>
 				<div class="container">
 					<article class="row">
 						<figure class="col-sm-3">
@@ -241,10 +243,10 @@
 						</aside>
 					</article>
 				</div>
-				<a href="#"></a>
 			</div>
 
 			<div id="folio-leon">
+				<a href="#"></a>
 				<div class="container">
 					<article class="row">
 						<figure class="col-sm-3">
@@ -260,27 +262,26 @@
 						</aside>
 					</article>
 				</div>
-				<a href="#"></a>
 			</div>
 		</section>
 
 		<section id="contact" class="bg-dark">
-			<form class="container" action="" method="post" onsubmit="return checkAll()">
-				<h2>Besoin d'un renseignement ? Un proposition à me faire ? Contactez-moi.</h2>
+			<form class="container" action="" method="post" onsubmit="return check()">
+				<h2>Besoin d'un renseignement ? Une proposition à me faire ? Contactez-moi.</h2>
 				<div class="row">
-					<div class="form-group col-6 row">
+					<div class="form-group col-6">
 						<label for="name-input" class="col-2 col-form-label">Nom</label>
-						<input class="form-control" type="text" value="" id="name-input"  onblur="textBlurFunction(this)" >
+						<input class="form-control col" type="text" value="" id="name-input"  onblur="check(this)" >
 					</div>
-					<div class="form-group col-6 row">
+					<div class="form-group col-6">
 						<label for="email-input" class="col-2 col-form-label">Email</label>
-						<input class="form-control" type="email" value="" id="email-input" onblur="emailBlurFunction(this)">
+						<input class="form-control" type="email" value="" id="email-input" onblur="check(this)">
 					</div>
 				</div>
 
 				<div class="form-group row">
 					<label for="msg-input" class="col-1 col-form-label">Message</label>
-					<textarea class="vam form-control" id="msg-input" onblur="isNotEmpty(this)"></textarea>
+					<textarea class="vam form-control col-10" id="msg-input" onblur="check(this)"></textarea>
 				</div>
 
 				<button type="submit" id="subButton" class="btn btn-default">Envoyer</button>

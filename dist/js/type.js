@@ -25,9 +25,9 @@ theater
 
 theater
 	.addActor('me', { speed: 1, accuracy: 0.9 })
-	.addScene('me: link rel="stylesheet" href="css/style.css">',1000)
+	.addScene('me: link rel="stylesheet" href="css/sytle.css">',1000)
 
-	.addScene(-6,'s.css">')
+	.addScene(-10,'tyles.css">')
 	.addScene(function (done) {
 	document.body.classList.add('dark')
 	done()

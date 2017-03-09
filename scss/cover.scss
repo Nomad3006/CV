@@ -1,25 +1,20 @@
-$color-cover-primary: #333;
-$color-cover-secondary: #fff;
-$spacing: 2rem;
-$spacing-large: $spacing * 3;
-
 a,
 a:focus,
 a:hover {
-	color: $color-cover-secondary;
+	color: #fff;
 	text-decoration: none;
 }
 
 .btn-secondary{
-	color: $color-cover-secondary;
+	color: #fff;
 	text-shadow: none;
-	background-color: $color-cover-primary;
-	border: .05rem solid $color-cover-secondary;
+	background-color: #333;
+	border: .05rem solid #fff;
 	transition:all .4s ease;
 
 	&:hover, &:focus{
-		color:$color-cover-primary;
-		background-color: $color-cover-secondary;
+		color:#333;
+		background-color: #fff;
 	}
 }
 
@@ -27,11 +22,15 @@ body {
 
 }
 
+//.light-themed{
+//	color:#333 !important;
+//	background-color: #fff !important;
+//}
 .site-wrapper {
-	color: $color-cover-secondary;
+	color: #fff;
 	text-align: center;
 	text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-	background-color: $color-cover-primary;
+	background-color: #333;
 	display: table;
 	width: 100%;
 	height: 100vh;
@@ -60,7 +59,7 @@ body {
 	width: 100% !important;
 }
 .nav-scaled{
-	background-color: $color-cover-primary;
+	background-color: #333;
 	inner{
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -69,7 +68,7 @@ body {
 
 .masthead-brand {
 	margin-bottom: 0;
-	color: $color-cover-secondary;
+	color: #fff;
 }
 
 .nav-masthead .nav-link {
@@ -90,10 +89,9 @@ body {
 }
 
 .nav-masthead .active {
-	color: $color-cover-secondary;
-	border-bottom-color: $color-cover-secondary;
+	color: #fff;
+	border-bottom-color: #fff;
 }
-
 
 .actor {
 	margin: 0 auto;
@@ -123,6 +121,7 @@ body {
 	content: '|';
 	animation: blink 500ms infinite;
 }
+
 @media (min-width: 48em) {
 	.masthead-brand {
 		float: left;
@@ -141,20 +140,13 @@ body {
 	font-weight: bold;
 }
 
-.cover-heading{
-	color: $color-cover-secondary;
-}
-
 @media (min-width: 40em) {
 	.masthead {
-		position: fixed;
+		position: absolute;
 		top: 0;
 	}
 	/* line 138, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
-	.mastfoot {
-		position: fixed;
-		bottom: 0;
-	}
+
 	/* Start the vertical centering */
 	/* line 143, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
 	.site-wrapper-inner {
@@ -163,7 +155,6 @@ body {
 	/* Handle the widths */
 	/* line 147, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
 	.masthead,
-	.mastfoot,
 	.cover-container {
 		width: 100%;
 		/* Must be percentage or pixels for horizontal alignment */
@@ -173,7 +164,6 @@ body {
 @media (min-width: 62em) {
 	/* line 155, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
 	.masthead,
-	.mastfoot,
 	.cover-container {
 		width: 63rem;
 	}
