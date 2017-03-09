@@ -24,16 +24,16 @@ theater
 //})
 
 theater
-	.addActor('me', { speed: 1, accuracy: 0.9 })
+	.addActor('me', { speed: 1.2, accuracy: 0.9 })
 	.addScene('me: link rel="stylesheet" href="css/sytle.css">',1000)
 
 	.addScene(-10,'tyles.css">')
 	.addScene(function (done) {
-	document.body.classList.add('dark')
+	$('#bgimgvect').attr("src","img/withcss.jpg")
 	done()
 },5000)
 	.addScene(function (done) {
-	document.body.classList.remove('dark')
+	$('#bgimgvect').attr("src","img/withoutcss.jpg")
 	done()
 })
 	.addScene(theater.replay.bind(theater))
