@@ -31,6 +31,10 @@ body {
 	text-align: center;
 	text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 	background-color: #333;
+	background-image: url(../img/capture.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:80%;
 	display: table;
 	width: 100%;
 	height: 100vh;
@@ -43,6 +47,7 @@ body {
 .site-wrapper-inner {
 	display: table-cell;
 	vertical-align: top;
+	background-color:  rgba(51, 51, 51, 0.85)
 }
 
 .cover-container {
@@ -93,35 +98,6 @@ body {
 	border-bottom-color: #fff;
 }
 
-.actor {
-	margin: 0 auto;
-	font-size: 1.5rem;
-	display: flex;
-	div{
-		display: inline-block;
-		width: 289px;
-	}
-}
-
-.actor__prefix{
-	text-align: right;
-}
-
-.actor__content {
-	text-align: left;
-	flex-grow: 1;
-}
-
-@keyframes blink {
-	from { opacity: 0; }
-	to { opacity: 1; }
-}
-
-.actor__content--typing::after {
-	content: '|';
-	animation: blink 500ms infinite;
-}
-
 @media (min-width: 48em) {
 	.masthead-brand {
 		float: left;
@@ -165,7 +141,7 @@ body {
 	/* line 155, C:/Users/Thomas/Desktop/CV/scss/cover.scss */
 	.masthead,
 	.cover-container {
-		width: 63rem;
+		width: 33rem;
 	}
 }
 

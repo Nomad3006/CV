@@ -70,7 +70,7 @@ h2{
 
 .vam{vertical-align: middle;}
 .tac{text-align: center;}
-
+.dib
 .subtitle{
 	font-weight: bold;	
 	font-size: 1em;
@@ -207,7 +207,7 @@ h2{
 .bar-green div div{ background-color: $bg-green !important;}
 
 
-//---------------section competence-------------------
+//---------------section portfolio-------------------
 #folio-ave{background-color: $bg-blue;color: $color-white;}
 #folio-leon{background-color: $bg-red2;color: $color-white;}
 
@@ -270,7 +270,7 @@ form{
 	}
 	.form-group{
 		@extend .mb-md
-	}
+			}
 	.col-form-label{
 		color: $color-white !important;
 	}
@@ -279,12 +279,196 @@ form{
 	}
 }
 
-//---------------Contact Form-------------------
+//---------------typing-------------------
 #typing{
 	height: 500px;
 	img{
 		position: absolute;
 	}
+	.actor {
+		margin: 0 auto;
+		font-size: 1.5rem;
+		display: flex;
+		div{
+			display: inline-block;
+		}
+	}
+
+	.actor__prefix{
+		text-align: right;
+	}
+
+	.actor__content {
+		text-align: left;
+		flex-grow: 1;
+	}
+
+	@keyframes blink {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+
+	.actor__content--typing::after {
+		content: '|';
+		animation: blink 500ms infinite;
+	}
 }
 
+//---------------test-------------------
 
+#test {
+	list-style: none;
+	position: relative;
+	height: 600px;
+
+	.wrapper {
+		font-size: 1em;
+		position: absolute;
+		width: 26em;
+		height: 26em;
+		bottom: 0em;
+		left: 36%;
+		z-index: 10;
+		border-radius: 50%;
+		-webkit-transition: all 0.3s ease;
+		border-radius: 50%;
+		transform-origin: 50% 50%;
+	}
+
+
+	.wrapper li {
+		font-size: 1.5em;
+		position: absolute;
+		overflow: hidden;
+		width: 10em;
+		height: 10em;
+		left: 50%;
+		top: 50%;
+		margin-top: -1.3em;
+		margin-left: -10em;
+		-webkit-transform-origin: 100% 100%;
+		-webkit-transition: border 0.3s ease;
+		transition: all 0.3s ease;
+	}
+
+	.wrapper li a {
+		display: block;
+		font-size: 1.18em;
+		position: absolute;
+		height: 14.5em;
+		width: 14.5em;
+		bottom: -7.25em;
+		right: -7.25em;
+		padding-top: 0.8em;
+		border-radius: 50%;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		-webkit-transform: skew(-60deg) rotate(-75deg) scale(1);
+		-webkit-transition: opacity 0.3s, color 0.3s;
+		&:before{
+			margin-left: 0;
+			font-size: 38px;
+		}
+	}
+	.wrapper li:hover a {
+
+	}
+	.wrapper li a span {
+		font-size: 1.1em;
+		opacity: 0.7;
+	}
+	.wrapper li:hover:first-child{
+		transform: translate(-6px,8px) rotate(0deg) skew(60deg);
+	}
+	.wrapper li:nth-child(2):hover{
+		transform: translate(-15px,-15px) rotate(30deg) skew(60deg);
+	}
+	.wrapper li:nth-child(3):hover{
+		transform: translate(-5px,-20px) rotate(60deg) skew(60deg);
+	}
+	.wrapper li:nth-child(4):hover{
+		transform: translate(5px,-20px) rotate(90deg) skew(60deg);
+	}
+	.wrapper li:nth-child(5):hover{
+		transform: translate(15px,-15px) rotate(120deg) skew(60deg);
+	}
+	.wrapper li:nth-child(6):hover{
+		transform: translate(6px,8px) rotate(150deg) skew(60deg);
+
+	}.wrapper li:hover:first-child a{
+		background-color: red !important;
+	}
+	.wrapper li:nth-child(2):hover a{
+		background-color: darkorange !important;
+	}
+	.wrapper li:nth-child(3):hover a{
+		background-color: yellow !important;
+	}
+	.wrapper li:nth-child(4):hover a{
+		background-color: greenyellow !important;
+	}
+	.wrapper li:nth-child(5):hover a{
+		background-color: dodgerblue !important;
+	}
+	.wrapper li:nth-child(6):hover a{
+		background-color: purple !important;
+	}
+	.wrapper li:first-child {
+		-webkit-transform: rotate(0deg) skew(60deg);
+	}
+
+	.wrapper li:nth-child(2) {
+		-webkit-transform: rotate(30deg) skew(60deg);
+	}
+
+	.wrapper li:nth-child(3) {
+		-webkit-transform: rotate(60deg) skew(60deg);
+	}
+
+	.wrapper li:nth-child(4) {
+		-webkit-transform: rotate(90deg) skew(60deg);
+	}
+
+	.wrapper li:nth-child(5) {
+		-webkit-transform: rotate(120deg) skew(60deg);
+	}
+
+	.wrapper li:nth-child(6) {
+		-webkit-transform: rotate(150deg) skew(60deg);
+	}
+
+	.wrapper li:nth-child(odd) a {
+		background-color: lighten($color-black,30%);
+	}
+
+	.wrapper li:nth-child(even) a {
+		background-color: $font-grey;
+	}
+
+
+
+	/* Responsive awesomeness */
+	@media screen and (max-width:480px){
+		.csstransforms .cn-wrapper{
+			font-size:.68em;
+		}
+		.cn-button{
+			font-size:1em;
+		}
+		.csstransforms .cn-wrapper li {
+			font-size:1.52em;
+		}
+	}
+
+	@media screen and (max-width:320px){
+		.no-csstransforms .cn-wrapper{
+			width:15.15px;
+			margin-left: -7.5em;
+		}
+		.no-csstransforms .cn-wrapper li{
+			height:3em;
+			width:3em;
+		}
+	}
+}
