@@ -1,1 +1,617 @@
-body{padding:0;margin:0;box-sizing:border-box}section{padding-top:70px;padding-bottom:70px}h1,h2,h3{text-align:center;margin-bottom:50px}h4{font-size:1.2em}h2{font-weight:700}.bg-light{color:#464a4c;background-color:#fbfbfb}.bg-light h1,.bg-light h2,.bg-light h3,.bg-light h4{color:#333}.bg-dark{color:#fbfbfb;background-color:#283139}.red{color:#ec6d5f}.blue{color:#2a97dc}.green{color:#47bfa4}.ml-md{margin-left:30px}.mb-md,form .form-group{margin-bottom:30px}.mr-md{margin-right:30px}.mt-md{margin-top:30px}.pl-md{padding-left:30px}.pb-md{padding-bottom:30px}.pr-md{padding-right:30px}.pt-md{padding-top:30px}.vam{vertical-align:middle}.tac{text-align:center}.subtitle{font-weight:bold;font-size:1em}.lead a{width:160px}.scroll{position:absolute;bottom:20px;transform-origin:center;left:0;right:0;margin:0 auto;z-index:2;display:inline-block;-webkit-transform:translate(0, -50%);transform:translate(0, -50%);color:#fff;font:normal 400 20px/1 'Josefin Sans', sans-serif;letter-spacing:.1em;text-align:center;text-decoration:none;transition:opacity .3s}.scroll:hover{opacity:.5;text-decoration:none}.scroll span{position:absolute;top:-73px;left:50%;width:24px;height:24px;margin-left:-12px;border-left:1px solid #fff;border-bottom:1px solid #fff;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:sdb05 1.5s infinite;animation:sdb05 1.5s infinite;box-sizing:border-box}@-webkit-keyframes sdb05{0%{-webkit-transform:rotate(-45deg) translate(0, 0);opacity:0}50%{opacity:1}100%{-webkit-transform:rotate(-45deg) translate(-20px, 20px);opacity:0}}@keyframes sdb05{0%{transform:rotate(-45deg) translate(0, 0);opacity:0}50%{opacity:1}100%{transform:rotate(-45deg) translate(-20px, 20px);opacity:0}}#profil{padding-top:70px}#profil ul{list-style:none;padding-left:0;margin-top:-13px}#profil ul li{padding-top:5px}#parcours ul{list-style:none;padding-left:0}#parcours ul li{padding-top:5px}#parcours .flaticon-success:before{font-size:1.8em}#competence ul{list-style:none;font-size:1.2em}#competence ul div{border-radius:5px;background-color:#ddd;width:100%;height:7px}#competence h3{text-align:left;font-size:1.5em;font-weight:normal;margin-bottom:30px;padding-left:40px}.bar-red div div{background-color:#db2929 !important}.bar-orange div div{background-color:#f78e16 !important}.bar-yellow div div{background-color:#fce700 !important}.bar-green div div{background-color:#83c912 !important}#folio-ave{background-color:#2a97dc;color:#fbfbfb}#folio-leon{background-color:#ff4242;color:#fbfbfb}#portfolio{padding-bottom:0}#portfolio h2{width:300px;height:66px;padding-top:10px;margin:0 auto}#portfolio img{width:100%}#portfolio>div{position:relative;padding:50px 0;transition:all .3s ease}#portfolio article{display:flex;align-items:center}#portfolio aside i:before{font-size:12em}#portfolio a{position:absolute;top:0;left:0;width:100%;height:100%;z-index:20}#portfolio a:hover+div{transform:scale(0.98)}#portfolio a+div{transition:all .3s ease}form .form-control{display:inline-block !important}form i{vertical-align:top;display:inline-block;right:-32px;top:-10px;line-height:1}form i:before{font-size:38px !important}form input{vertical-align:top}form .col-form-label{color:#fbfbfb !important}form textarea{height:90px}#typing{height:500px}#typing img{position:absolute}
+/* line 24, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 30, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* line 32, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 37, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+h4 {
+  font-size: 1.2em;
+}
+
+/* line 40, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+h2 {
+  font-weight: 700;
+}
+
+/* line 44, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.bg-light {
+  color: #464a4c;
+  background-color: #fbfbfb;
+}
+
+/* line 47, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.bg-light h1, .bg-light h2, .bg-light h3, .bg-light h4 {
+  color: #333;
+}
+
+/* line 52, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.bg-dark {
+  color: #fbfbfb;
+  background-color: #283139;
+}
+
+/* line 57, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.red {
+  color: #ec6d5f;
+}
+
+/* line 58, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.blue {
+  color: #2a97dc;
+}
+
+/* line 59, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.green {
+  color: #47bfa4;
+}
+
+/* line 61, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.ml-md {
+  margin-left: 30px;
+}
+
+/* line 62, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.mb-md, form .form-group {
+  margin-bottom: 30px;
+}
+
+/* line 63, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.mr-md {
+  margin-right: 30px;
+}
+
+/* line 64, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.mt-md {
+  margin-top: 30px;
+}
+
+/* line 66, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.pl-md {
+  padding-left: 30px;
+}
+
+/* line 67, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.pb-md {
+  padding-bottom: 30px;
+}
+
+/* line 68, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.pr-md {
+  padding-right: 30px;
+}
+
+/* line 69, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.pt-md {
+  padding-top: 30px;
+}
+
+/* line 71, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.vam {
+  vertical-align: middle;
+}
+
+/* line 72, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.tac {
+  text-align: center;
+}
+
+/* line 73, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.dib .subtitle {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* line 80, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.lead a {
+  width: 160px;
+}
+
+/* line 87, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  transform-origin: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+/* line 104, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.scroll:hover {
+  opacity: .5;
+  text-decoration: none;
+}
+
+/* line 108, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.scroll span {
+  position: absolute;
+  top: -73px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+/* line 154, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#profil {
+  padding-top: 70px;
+}
+
+/* line 156, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#profil ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: -13px;
+}
+
+/* line 160, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#profil ul li {
+  padding-top: 5px;
+}
+
+/* line 170, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#parcours ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 173, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#parcours ul li {
+  padding-top: 5px;
+}
+
+/* line 177, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#parcours .flaticon-success:before {
+  font-size: 1.8em;
+}
+
+/* line 185, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#competence ul {
+  list-style: none;
+  font-size: 1.2em;
+}
+
+/* line 188, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#competence ul div {
+  border-radius: 5px;
+  background-color: #ddd;
+  width: 100%;
+  height: 7px;
+}
+
+/* line 195, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#competence h3 {
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 30px;
+  padding-left: 40px;
+}
+
+/* line 204, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.bar-red div div {
+  background-color: #db2929 !important;
+}
+
+/* line 205, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.bar-orange div div {
+  background-color: #f78e16 !important;
+}
+
+/* line 206, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.bar-yellow div div {
+  background-color: #fce700 !important;
+}
+
+/* line 207, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+.bar-green div div {
+  background-color: #83c912 !important;
+}
+
+/* line 211, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#folio-ave {
+  background-color: #2a97dc;
+  color: #fbfbfb;
+}
+
+/* line 212, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#folio-leon {
+  background-color: #ff4242;
+  color: #fbfbfb;
+}
+
+/* line 214, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#portfolio {
+  padding-bottom: 0;
+}
+
+/* line 216, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#portfolio h2 {
+  width: 300px;
+  height: 66px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+/* line 222, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#portfolio img {
+  width: 100%;
+}
+
+/* line 223, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#portfolio > div {
+  position: relative;
+  padding: 50px 0;
+  transition: all .3s ease;
+}
+
+/* line 229, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#portfolio article {
+  display: flex;
+  align-items: center;
+}
+
+/* line 230, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#portfolio aside i:before {
+  font-size: 12em;
+}
+
+/* line 233, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#portfolio a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+/* line 240, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#portfolio a:hover + div {
+  transform: scale(0.98);
+}
+
+/* line 243, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#portfolio a + div {
+  transition: all .3s ease;
+}
+
+/* line 255, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+form .form-control {
+  display: inline-block !important;
+}
+
+/* line 258, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+form i {
+  vertical-align: top;
+  display: inline-block;
+  right: -32px;
+  top: -10px;
+  line-height: 1;
+}
+
+/* line 264, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+form i:before {
+  font-size: 38px !important;
+}
+
+/* line 268, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+form input {
+  vertical-align: top;
+}
+
+/* line 274, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+form .col-form-label {
+  color: #fbfbfb !important;
+}
+
+/* line 277, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+form textarea {
+  height: 90px;
+}
+
+/* line 283, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#typing {
+  height: 500px;
+}
+
+/* line 285, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#typing img {
+  position: absolute;
+}
+
+/* line 288, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#typing .actor {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+/* line 292, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#typing .actor div {
+  display: inline-block;
+}
+
+/* line 297, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#typing .actor__prefix {
+  text-align: right;
+}
+
+/* line 301, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#typing .actor__content {
+  text-align: left;
+  flex-grow: 1;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 311, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#typing .actor__content--typing::after {
+  content: '|';
+  animation: blink 500ms infinite;
+}
+
+/* line 319, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test {
+  list-style: none;
+  position: relative;
+  height: 600px;
+  /* Responsive awesomeness */
+}
+
+/* line 324, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper {
+  font-size: 1em;
+  position: absolute;
+  width: 26em;
+  height: 26em;
+  bottom: 0em;
+  left: 36%;
+  z-index: 10;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  border-radius: 50%;
+  transform-origin: 50% 50%;
+}
+
+/* line 339, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li {
+  font-size: 1.5em;
+  position: absolute;
+  overflow: hidden;
+  width: 10em;
+  height: 10em;
+  left: 50%;
+  top: 50%;
+  margin-top: -1.3em;
+  margin-left: -10em;
+  -webkit-transform-origin: 100% 100%;
+  -webkit-transition: border 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 354, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li a {
+  display: block;
+  font-size: 1.18em;
+  position: absolute;
+  height: 14.5em;
+  width: 14.5em;
+  bottom: -7.25em;
+  right: -7.25em;
+  padding-top: 0.8em;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transform: skew(-60deg) rotate(-75deg) scale(1);
+  -webkit-transition: opacity 0.3s, color 0.3s;
+}
+
+/* line 369, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li a:before {
+  margin-left: 0;
+  font-size: 38px;
+}
+
+/* line 377, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li a span {
+  font-size: 1.1em;
+  opacity: 0.7;
+}
+
+/* line 381, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:hover:first-child {
+  transform: translate(-6px, 8px) rotate(0deg) skew(60deg);
+}
+
+/* line 384, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(2):hover {
+  transform: translate(-15px, -15px) rotate(30deg) skew(60deg);
+}
+
+/* line 387, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(3):hover {
+  transform: translate(-5px, -20px) rotate(60deg) skew(60deg);
+}
+
+/* line 390, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(4):hover {
+  transform: translate(5px, -20px) rotate(90deg) skew(60deg);
+}
+
+/* line 393, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(5):hover {
+  transform: translate(15px, -15px) rotate(120deg) skew(60deg);
+}
+
+/* line 396, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(6):hover {
+  transform: translate(6px, 8px) rotate(150deg) skew(60deg);
+}
+
+/* line 399, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:hover:first-child a {
+  background-color: red !important;
+}
+
+/* line 402, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(2):hover a {
+  background-color: darkorange !important;
+}
+
+/* line 405, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(3):hover a {
+  background-color: yellow !important;
+}
+
+/* line 408, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(4):hover a {
+  background-color: greenyellow !important;
+}
+
+/* line 411, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(5):hover a {
+  background-color: dodgerblue !important;
+}
+
+/* line 414, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(6):hover a {
+  background-color: purple !important;
+}
+
+/* line 417, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:first-child {
+  -webkit-transform: rotate(0deg) skew(60deg);
+}
+
+/* line 421, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(2) {
+  -webkit-transform: rotate(30deg) skew(60deg);
+}
+
+/* line 425, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(3) {
+  -webkit-transform: rotate(60deg) skew(60deg);
+}
+
+/* line 429, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(4) {
+  -webkit-transform: rotate(90deg) skew(60deg);
+}
+
+/* line 433, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(5) {
+  -webkit-transform: rotate(120deg) skew(60deg);
+}
+
+/* line 437, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(6) {
+  -webkit-transform: rotate(150deg) skew(60deg);
+}
+
+/* line 441, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(odd) a {
+  background-color: gray;
+}
+
+/* line 445, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+#test .wrapper li:nth-child(even) a {
+  background-color: #464a4c;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 453, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+  #test .csstransforms .cn-wrapper {
+    font-size: .68em;
+  }
+  /* line 456, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+  #test .cn-button {
+    font-size: 1em;
+  }
+  /* line 459, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+  #test .csstransforms .cn-wrapper li {
+    font-size: 1.52em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* line 465, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+  #test .no-csstransforms .cn-wrapper {
+    width: 15.15px;
+    margin-left: -7.5em;
+  }
+  /* line 469, C:/Users/Thomas/Desktop/CV/scss/styles.scss */
+  #test .no-csstransforms .cn-wrapper li {
+    height: 3em;
+    width: 3em;
+  }
+}
+
+/*# sourceMappingURL=../dist/css/styles.map */

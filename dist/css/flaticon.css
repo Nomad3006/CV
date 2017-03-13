@@ -29,15 +29,22 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-error:before { content: "\f100"; }
-.flaticon-success:before { content: "\f101"; }
-.flaticon-right-arrow:before { content: "\f102"; }
-.flaticon-arrow-point-to-right:before { content: "\f103"; }
-.flaticon-next:before { content: "\f104"; }
-.flaticon-facebook-placeholder-for-locate-places-on-maps:before { content: "\f105"; }
-.flaticon-twitter-letter-logo:before { content: "\f106"; }
-.flaticon-twitter-logo:before { content: "\f107"; }
-.flaticon-facebook-logo:before { content: "\f108"; }
-.flaticon-linkedin-logo-1:before { content: "\f109"; }
-.flaticon-facebook-letter-logo:before { content: "\f10a"; }
-.flaticon-linkedin-logo:before { content: "\f10b"; }n-012-linkedin-logo:before { content: "\f10b"; }
+.flaticon-settings:before { content: "\f100"; }
+.flaticon-communication:before { content: "\f101"; }
+.flaticon-photoshop:before { content: "\f102"; }
+.flaticon-tools:before { content: "\f103"; }
+.flaticon-web:before { content: "\f104"; }
+.flaticon-responsive-symbol-with-a-widescreen-monitor-a-cellphone-and-a-tablet:before { content: "\f105"; }
+.flaticon-html-coding:before { content: "\f106"; }
+.flaticon-error:before { content: "\f107"; }
+.flaticon-success:before { content: "\f108"; }
+.flaticon-right-arrow:before { content: "\f109"; }
+.flaticon-arrow-point-to-right:before { content: "\f10a"; }
+.flaticon-next:before { content: "\f10b"; }
+.flaticon-facebook-placeholder-for-locate-places-on-maps:before { content: "\f10c"; }
+.flaticon-twitter-letter-logo:before { content: "\f10d"; }
+.flaticon-twitter-logo:before { content: "\f10e"; }
+.flaticon-facebook-logo:before { content: "\f10f"; }
+.flaticon-linkedin-logo-1:before { content: "\f110"; }
+.flaticon-facebook-letter-logo:before { content: "\f111"; }
+.flaticon-linkedin-logo:before { content: "\f112"; }
