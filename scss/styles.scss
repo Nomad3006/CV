@@ -321,6 +321,11 @@ form{
 	position: relative;
 	height: 600px;
 
+	div[class*=-text]{
+		background-color: #fff;
+
+	}
+
 	#cache{
 		height: 234px;
 		width: 437px;
@@ -410,7 +415,7 @@ form{
 		background-color: #ff8900 !important;
 	}
 	.wrapper li:nth-child(3):hover a{
-		background-color: #a77210 !important;
+		background-color: #ffbe00 !important;
 	}
 	.wrapper li:nth-child(4):hover a{
 		background-color: #268e06 !important;
