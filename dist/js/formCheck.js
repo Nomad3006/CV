@@ -17,6 +17,7 @@ function check(elem){
 			return false;
 		}
 		else{
+			sendmail.php
 			return true;
 		}
 	}

@@ -321,9 +321,10 @@ form{
 	position: relative;
 	height: 600px;
 
-	div[class*=-text]{
+	div[class*="-text"]{
 		background-color: #fff;
-
+		height: 300px;
+		width: 80%;
 	}
 
 	#cache{
