@@ -1,7 +1,18 @@
 <?php
-include 'sendmail.php';
-?>
-<!DOCTYPE html>
+//if "email" variable is filled out, send email
+  if (isset($_REQUEST['email']))  {
+
+  //Email information
+  $admin_email = "toma06pal@gmail.com";
+  $email = $_REQUEST['email'];
+  $name = $_REQUEST['name'];
+  $comment = $_REQUEST['message'];
+
+  //send email
+  mail($admin_email, "$name", $message, "From:" . $email);
+  }
+
+?><!DOCTYPE html>
 <html lang="">
 	<head>
 		<meta charset="utf-8">
@@ -334,34 +345,35 @@ include 'sendmail.php';
 			</div>
 		</section>
 		<section id="contact" class="bg-dark">
-			<form class="container" action="" method="post" onsubmit="return check()">
-				  <h2>Besoin d'un renseignement ? Une proposition à me faire ? Contactez-moi.</h2>
-		<div class="row">
-			<div class="form-group col-6">
-				<label for="name-input" class="col-2 col-form-label">Nom</label>
-				<input class="form-control col" type="text" value="" id="name-input"  onblur="check(this)" >
-			</div>
-			<div class="form-group col-6">
-				<label for="email-input" class="col-2 col-form-label">Email</label>
-				<input class="form-control" type="email" value="" id="email-input" onblur="check(this)">
-			</div>
-		</div>
+<!--			<form class="container" action="" method="post" onsubmit="return check()">-->
+			<form class="container" action="" method="post">
+				<h2>Besoin d'un renseignement ? Une proposition à me faire ? Contactez-moi.</h2>
+				<div class="row">
+					<div class="form-group col-6">
+						<label for="name-input" class="col-2 col-form-label">Nom</label>
+						<input class="form-control col" type="text" name="name" value="" id="name-input"  onblur="check(this)" >
+					</div>
+					<div class="form-group col-6">
+						<label for="email-input" class="col-2 col-form-label">Email</label>
+						<input class="form-control" type="email" name="email" value="" id="email-input" onblur="check(this)">
+					</div>
+				</div>
 
-		<div class="form-group row">
-			<label for="msg-input" class="col-1 col-form-label">Message</label>
-			<textarea class="vam form-control col-10" id="msg-input" onblur="check(this)"></textarea>
-		</div>
+				<div class="form-group row">
+					<label for="msg-input" class="col-1 col-form-label">Message</label>
+					<textarea class="vam form-control col-10" name="message" id="msg-input" onblur="check(this)"></textarea>
+				</div>
 
-		<button type="submit" id="subButton" class="btn btn-default">Envoyer</button>
-		</form>
-	</section>
+				<button type="submit" id="subButton" class="btn btn-default">Envoyer</button>
+			</form>
+		</section>
 
-<!-- Bootstrap core JavaScript
+		<!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+		<!-- Placed at the end of the document so the pages load faster -->
 
 
-<!--
+		<!--
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -370,16 +382,13 @@ include 'sendmail.php';
 IE10 viewport hack for Surface/desktop Windows 8 bug
 <script src="../docs/assets/js/ie10-viewport-bug-workaround.js"></script>
 -->
-<!-- Mes js -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
-<script src="js/theater.min.js"></script>
-<script src="js/scroll.js"></script>
-<script src="js/formCheck.js"></script>
-<script src="js/type.js"></script>
-<script src="js/animations.js"></script>
-</body>
+		<!-- Mes js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+		<script src="js/theater.min.js"></script>
+		<script src="js/scroll.js"></script>
+		<script src="js/formCheck.js"></script>
+		<script src="js/type.js"></script>
+		<script src="js/animations.js"></script>
+	</body>
 </html>
-<?php
-  }
-?>
